@@ -71,19 +71,14 @@ int main(){
 		lihatstack();
 		cout << "\n1. Input (Push)\n"<<"2. Hapus (Pop)\n"<<"3. Keluar\n"<<"Masukkan Pilihan: ";
 		cin >>pilih;
-		switch (pilih)
-		{
-		case 1:
+		if (pilih==1){
 			push();
-			break;
-		case 2:
+		}else if(pilih==2){
 			pop();
-			break;
-		case 3:
+		}else if(pilih==3){
 			exit(0);
-		default:
-		cout << "Pilihan tidak tersedia\n" << endl;
-			break;
+		}else {
+			cout << "Pilihan tidak tersedia\n" << endl;	
 		}
 	} while (pilih!=3);
 }
