@@ -11,10 +11,24 @@ void inisial(){
 }
 
 bool isEmpty(){
-	return tumpuk.top==-1;
+	if(tumpuk.top==-1)
+	{
+		return 1;
+	}
+	else
+	{
+		return 0;
+	}
 }
 bool isFull(){
-	return tumpuk.top==maks-1;
+	if(tumpuk.top==maks-1)
+	{
+		return 1;
+	}
+	else
+	{
+		return 0;
+	}
 }
 
 void push(){
@@ -72,6 +86,7 @@ int main(){
 }
 
 #Ahmad Fathoni - 1717051053
+#Alharis Dharmariski - 1717051049
 
 
 
