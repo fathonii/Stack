@@ -1,4 +1,5 @@
 #include <iostream>
+#include <stdlib.h>
 using namespace std;
 #define maks 20
 
@@ -78,8 +79,10 @@ int main(){
 		case 2:
 			pop();
 			break;
+		case 3:
+			exit(0);
 		default:
-      cout << "Pilihan tidak tersedia" << endl;
+		cout << "Pilihan tidak tersedia\n" << endl;
 			break;
 		}
 	} while (pilih!=3);
